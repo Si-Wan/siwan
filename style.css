@@ -1,0 +1,302 @@
+
+:root {
+    --white-color: #fff;
+    --black-color: #140a00;
+    --blue-color: #045fd4;
+    --red-color: #ff0000;
+    --grey-dark-color: #909090;
+    --grey-light-color: #e0e0e0;
+
+    --padding: 12px;
+    --pic-size: 36px;
+
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url("image/header background img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    box-shadow: inset 220px 100px 250px #000000, inset -220px -100px 150px #000000;
+}
+
+header .main1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+header .main1 .blank {
+    width: 100px;
+}
+
+header .main1 img {
+    width: 200px;
+}
+
+header .main1 .sign {
+    background-color: red;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    margin-right: 10px;
+}
+
+header .main2 {
+    display: flex;
+    height: 75%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+header .main2 span h1 {
+    font-size: 50px;
+    padding: 10px 0px;
+}
+
+header .main2 span h3 {
+    padding: 18px 0px;
+}
+
+header .main2 span {
+    text-align: center;
+}
+
+header .main2 .redBtn {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    padding: var(--padding);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    text-transform: uppercase;
+}
+
+header .main2 .redBtn i {
+    padding: 0px 10px;
+}
+
+section2 .infoBtn {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px 0 10px;
+    color: #909090;
+    background-color: #0e0e0e;
+    border-bottom: solid 2px gray;
+}
+
+section2 .infoBtn .btn1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 0px 0px 10px 0;
+    border-bottom: solid 2px red;
+    cursor: pointer;
+}
+
+section2 .infoBtn .btn1:hover {
+    color: white;
+}
+
+section2 .infoBtn .btn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 0px 0px 10px 0;
+    cursor: pointer;
+}
+
+section2 .infoBtn .btn2:hover {
+    color: white;
+}
+
+section2 .infoBtn .btn3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: 0px 0px 10px 0;
+    cursor: pointer;
+}
+
+section2 .infoBtn .btn3:hover {
+    color: white;
+}
+
+section2 .infoBtn i {
+    font-size: 50px;
+    padding: 0 0 15px 0;
+    text-align: center;
+    justify-content: center;
+}
+
+section3 {
+}
+
+section3 .btn1content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+section3 .btn1content .cancelContent {
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    padding: 0 20px;
+}
+
+section3 .btn1content .cancelContent .cancelText {
+    display: flex;
+    padding: 5px 0;
+    font-size: 30px;
+}
+
+section3 .btn1content .cancelContent .cancelBtn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: red;
+    padding: 15px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    text-transform: uppercase;
+}
+
+section3 .btn1content img {
+    width: 35%;
+    padding: 0 20px;
+}
+
+section3 .btn2content {
+    padding: 30px 0;
+}
+
+section3 .btn2content .watchText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section3 .btn2content .watchText .text{
+    width: 50%;
+    font-size: 30px;
+}
+
+section3 .btn2content .watchText .watchBtn {
+    display: inline-block;
+    cursor: pointer;
+    background-color: red;
+    padding: 15px 15px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    text-transform: uppercase;
+}
+
+section3 .btn2content .watchView {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+section3 .btn2content .watchView .view1 {
+    width: 25%;
+    padding: 0 10px;
+}
+
+section3 .btn2content .watchView .view2 {
+    width: 25%;
+    padding: 0 10px;
+}
+
+section3 .btn2content .watchView .view3 {
+    width: 25%;
+    padding: 0 10px;
+}
+
+section3 .btn2content .watchView img {
+    width: 100%;
+}
+
+section3 .btn2content .watchView .viewText1 {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+section3 .btn2content .watchView .viewText2 {
+    color: grey;
+}
+
+section3 .btn3content {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: grey;
+}
